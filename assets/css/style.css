@@ -1,3 +1,4 @@
+/* Header */
 .header {
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
@@ -17,21 +18,84 @@
     background-repeat: repeat-x repeat-y;
 }
 
+/* Sidebar */
+.sidebar-header {
+    padding-bottom: 15px;
+    border-bottom: 1.5px solid #EEEEEE;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.connectimage {
+    height: 70px;
+    width: 70px;
+}
+
+
+/* About Me */
+.myphoto {
+    max-width: 33.3%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
     /* Set the fixed height of the footer here */
-    line-height: 60px;
-    /* Vertically center the text there */
-    text-align: center;
+
     background-color: #666666;
     border-top: 5px solid #4aaaa5;
-    font-size: 12px;
-    color: #cccccc;
 }
 
-.testbgcolor {
-    background-color: white;
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #cccccc;
+    line-height: 60px;
+    /* Vertically center the text there */
+}
+
+
+
+
+/* General Styling */
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-header {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #dddddd;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.main-content {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding-top: 15px;
+}
+
+.main-content-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-bottom: 0;
 }

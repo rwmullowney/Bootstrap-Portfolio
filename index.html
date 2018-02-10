@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ryan Mullowney's Bootstrap Page</title>
-    <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <title>Hello, world!</title>
 </head>
@@ -28,8 +28,8 @@
                 <a class="nav-item nav-link active" href="#">About
                     <span class="sr-only">(current)</span>
                 </a>
-                <a class="nav-item nav-link" href="#">Contact</a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link active" href="#">Contact</a>
+                <a class="nav-item nav-link active" href="#">Portfolio</a>
             </div>
         </div>
     </nav>
@@ -37,13 +37,49 @@
 
     <!-- Main body of site -->
     <div class="container">
-        <div class="row">
-            <div class="col-8">
+        <div class="row main-content-margin">
+            <!-- "About Me" section -->
+            <section class="col-sm-12 col-md-8 main-content mt-4">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="content-header">About Me</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col py-3">
+                        <img class="img-fluid float-left myphoto" src="assets/images/ryanmullowney.jpg" alt="Portrait">
+                        <p>Hey there! I'm Ryan.</p>
+                        <br>
+                        <p>I'm a Technology Consultant for the University of Texas at Austin. I recently decided I wanted a
+                            career change, so now I've begun the arduous journey of learning web development. The possibility
+                            of remote work makes this industry extremely exciting to me!</p>
+                        <br>
+                        <p>Outside of that, I'm a huge nerd. I play piano, dabble in guitar, have a scuba certification I never
+                            get to use, and I have a dog back home that I'm completely obsessed with. I've also been bitten
+                            by the travel bug and, fingers crossed, this new foray will help me do that more often.</p>
+                    </div>
+                </div>
+            </section>
 
-            </div>
-            <div class="col-4">
 
-            </div>
+            <!-- "Connect with Me" Sidebar section -->
+            <section class="clearfix col-sm-12 col-md-3 offset-md-1 main-content mt-4 pb-2">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="sidebar-header">Connect with Me</h2>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col d-flex justify-content-center">
+                        <a href="https://github.com/rwmullowney" target="_blank">
+                            <img class="connectimage" src="assets/images/github.png" alt="GitHub Icon"> </a>
+                        <a href="https://www.linkedin.com/in/ryan-mullowney-a9309443/" target="_blank">
+                            <img class="connectimage" src="assets/images/linkedin.png" alt="LinkedIn Icon"> </a>
+                        <a href="https://stackoverflow.com/users/9246315/ryan-m" target="_blank">
+                            <img class="connectimage" src="assets/images/stackoverflow.png" alt="StackOverflow Icon"> </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -52,7 +88,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Copyright &copy; 2018 Ryan Mullowney
+        <p class="footer-text">Copyright &copy; 2018 Ryan Mullowney
             <p>
     </footer>
 
