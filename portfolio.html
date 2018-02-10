@@ -5,14 +5,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ryan Mullowney's Bootstrap Page</title>
-    <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Ryan Mullowney's Portfolio</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body class="wood-background">
@@ -25,11 +23,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">About
+                <a class="nav-item nav-link active" href="index.html">About
                     <span class="sr-only">(current)</span>
                 </a>
-                <a class="nav-item nav-link" href="#">Contact</a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link active" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link active" href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -37,13 +35,40 @@
 
     <!-- Main body of site -->
     <div class="container">
-        <div class="row">
-            <div class="col-8">
+        <div class="row main-content-margin">
+            <!-- "About Me" section -->
+            <section class="col-sm-12 col-md-8 main-content mt-4">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="content-header">Portfolio</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col py-3">
 
-            </div>
-            <div class="col-4">
+                    </div>
+                </div>
+            </section>
 
-            </div>
+
+            <!-- "Connect with Me" Sidebar section -->
+            <section class="clearfix col-sm-12 col-md-3 offset-md-1 main-content mt-4 pb-2">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="sidebar-header">Connect with Me</h2>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col d-flex justify-content-center">
+                        <a href="https://github.com/rwmullowney" target="_blank">
+                            <img class="connectimage" src="assets/images/github.png" alt="GitHub Icon"> </a>
+                        <a href="https://www.linkedin.com/in/ryan-mullowney-a9309443/" target="_blank">
+                            <img class="connectimage" src="assets/images/linkedin.png" alt="LinkedIn Icon"> </a>
+                        <a href="https://stackoverflow.com/users/9246315/ryan-m" target="_blank">
+                            <img class="connectimage" src="assets/images/stackoverflow.png" alt="StackOverflow Icon"> </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -52,7 +77,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Copyright &copy; 2018 Ryan Mullowney
+        <p class="footer-text">Copyright &copy; 2018 Ryan Mullowney
             <p>
     </footer>
 
